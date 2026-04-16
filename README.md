@@ -1,4 +1,4 @@
-# DLL Injection Detection — ML vs Human Analysis
+# DLL Injection Detection - ML vs Human Analysis
 
 
 A machine learning pipeline for detecting and attributing DLL injection attacks using native Windows ETW and Sysmon telemetry, with empirical comparison against MITRE ATT&CK rule-based detection.
@@ -102,19 +102,19 @@ python detection_pipeline.py --build-dataset
 
 ## Key Findings
 
-**1 — ETW is sufficient for binary detection**  
+**1 - ETW is sufficient for binary detection**  
 AUC=0.863 and FPR=0.05% achievable with native Windows telemetry at no additional cost.
 
-**2 — ETW cannot attribute Classic_CRT, Classic_Hook or Reflective injection**  
+**2 - ETW cannot attribute Classic_CRT, Classic_Hook or Reflective injection**  
 All three techniques share identical ETW event signatures. SHAP analysis confirms `Is_Tainted_Past` dominates all three at 63-76%, providing no technique-discriminating information. This is an architectural ceiling, not a modelling limitation.
 
-**3 — ML decisively outperforms MITRE ATT&CK rules**  
+**3 - ML decisively outperforms MITRE ATT&CK rules**  
 2.56× higher F1, 50× lower FPR. Rules fail because they are stateless — they cannot propagate detection context across time windows.
 
-**4 — SMOTE degrades performance at 16.8:1 imbalance**  
+**4 - SMOTE degrades performance at 16.8:1 imbalance**  
 No correction: F1=0.640, FPR=0.34%. SMOTE: F1=0.578, FPR=2.90%.
 
-**5 — Reflective injection is the most evasive zero-day technique**  
+**5 - Reflective injection is the most evasive zero-day technique**  
 LOTO detection rate: 29.5%. Section mapping (NtMapViewOfSection) predicted near-zero.
 
 ---
@@ -138,4 +138,9 @@ LOTO detection rate: 29.5%. Section mapping (NtMapViewOfSection) predicted near-
 - See `requirements.txt` for full dependencies
 
 ---
+## Blog Post
+
+A full write-up of the methodology, findings and lessons learned is available here:
+
+**[Detecting Process Injection with Windows Telemetry](https://fxf61.github.io/Pentesting-AD-machine/posts/detecting-process-injection/)**
 
