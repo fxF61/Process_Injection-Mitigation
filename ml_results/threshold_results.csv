@@ -1,0 +1,4 @@
+Model,Default_F1,Tuned_F1,F1_Improvement,Best_Threshold,AUC,Default_Precision,Tuned_Precision,Default_Recall,Tuned_Recall
+Random Forest,0.5777,0.646,0.0683,0.83,0.8184,0.5892,0.893,0.5667,0.5061
+XGBoost,0.5585,0.6651,0.1066,0.8299999833106995,0.8443,0.5396,0.9897,0.5789,0.5009
+Logistic Regression,0.4534,0.6628,0.2094,1.0,0.856,0.3698,1.0,0.5858,0.4957

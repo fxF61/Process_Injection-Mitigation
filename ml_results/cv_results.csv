@@ -1,0 +1,5 @@
+Model,F1_Mean,F1_Std,Prec_Mean,Rec_Mean,AUC_Mean,AUC_Std,Train_Time_s
+Logistic Regression,0.4516,0.0116,0.3681,0.5856,0.836,0.0082,0.187
+Random Forest,0.5643,0.0194,0.5452,0.5853,0.8121,0.0087,1.459
+XGBoost,0.549,0.0124,0.5107,0.5943,0.8315,0.0047,0.266
+Neural Network,0.3995,0.0108,0.2824,0.6831,0.8374,0.0079,6.983

@@ -1,0 +1,5 @@
+Model,F1,Precision,Recall,ROC_AUC,Train_Time_s,Infer_ms
+Logistic Regression,0.4482,0.3663,0.5771,0.8538,0.229,0.0
+Random Forest,0.5781,0.5581,0.5997,0.8204,1.549,0.0036
+XGBoost,0.5623,0.5334,0.5945,0.8643,0.273,0.0004
+Neural Network,0.4281,0.3111,0.6863,0.8498,11.409,0.0004

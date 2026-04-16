@@ -1,0 +1,6 @@
+Model,F1,Precision,Recall,AUC,FPR,Type
+Rule-Based (Human Method),0.3201,0.4407,0.2513,0.5531,0.0192,Rule-Based
+Logistic Regression,0.6628,1.0,0.4957,0.8538,,ML
+Random Forest,0.646,0.893,0.5061,0.8204,,ML
+XGBoost,0.6651,0.9897,0.5009,0.8643,,ML
+Neural Network,0.4281,0.3111,0.6863,0.8498,,ML

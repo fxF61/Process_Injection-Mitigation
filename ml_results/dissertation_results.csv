@@ -1,0 +1,14 @@
+Approach,F1,Precision,Recall,AUC,FPR,FeatureSet,Type
+Rule-Based (Human),0.2860125260960334,0.363395225464191,0.23580034423407917,0.5874271560051436,0.024572540186341762,N/A,Rule-Based
+Logistic Regression (V1 (5 features)),0.5423,0.9776,0.3752,0.8079,0.0005,V1 (5 features),ML
+Random Forest (V1 (5 features)),0.5471,0.8453,0.4045,0.7983,0.0044,V1 (5 features),ML
+XGBoost (V1 (5 features)),0.3974,0.3018,0.5818,0.7876,0.0801,V1 (5 features),ML
+Neural Network (V1 (5 features)),0.5405,0.9775,0.3735,0.787,0.0005,V1 (5 features),ML
+Logistic Regression (V2 (16 features)),0.656,0.9828,0.4923,0.8474,0.0005,V2 (16 features),ML
+Random Forest (V2 (16 features)),0.6401,0.8975,0.4974,0.8273,0.0034,V2 (16 features),ML
+XGBoost (V2 (16 features)),0.4667,0.3617,0.6575,0.8405,0.069,V2 (16 features),ML
+Neural Network (V2 (16 features)),0.6559,0.9965,0.4888,0.8455,0.0001,V2 (16 features),ML
+Logistic Regression (V4 (22 features)),0.7316,0.9854,0.5818,0.8627,0.0005,V4 (22 features),ML
+Random Forest (V4 (22 features)),0.7196,0.9341,0.5852,0.8387,0.0025,V4 (22 features),ML
+XGBoost (V4 (22 features)),0.5266,0.4325,0.673,0.8513,0.0525,V4 (22 features),ML
+Neural Network (V4 (22 features)),0.7302,0.9854,0.58,0.8511,0.0005,V4 (22 features),ML
