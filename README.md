@@ -141,6 +141,9 @@ LOTO detection rate: 29.5%. Section mapping (NtMapViewOfSection) predicted near-
 ## Blog Post
 
 A full write-up of the methodology, findings and lessons learned is available here:
+> Note: `CallTrace_Depth` and `CallTrace_Unknown_Count` are present
+> in the dataset but excluded from all models due to data leakage.
+> See blog post for full explanation.
 
 **[Detecting Process Injection with Windows Telemetry](https://fxf61.github.io/Pentesting-AD-machine/posts/detecting-process-injection/)**
 
